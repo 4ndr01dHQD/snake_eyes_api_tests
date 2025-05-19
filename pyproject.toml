@@ -1,0 +1,24 @@
+[project]
+name = "test"
+version = "0.1.0"
+description = ""
+package-mode = false
+authors = [
+    {name = "a.cheremisin", email = "a.cheremisin@dostaevsky.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.32.3,<3.0.0",
+    "python-decouple>=3.8,<4.0",
+    "sqlalchemy (>=2.0.41,<3.0.0)",
+    "psycopg2-binary (>=2.9.10,<3.0.0)"
+]
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.5"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
